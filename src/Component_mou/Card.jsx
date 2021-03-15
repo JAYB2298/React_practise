@@ -6,6 +6,7 @@ export default class Card extends Component {
     } */
     
     render() {
+        //sdsdd
         let {selectedContact}=this.props;
         return (
             <>
