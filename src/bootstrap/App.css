@@ -1,0 +1,16 @@
+nav {
+  background-color: rgba(43, 39, 39, 0.945);
+  padding: 10px;
+  font-size: 18px;
+}
+
+.landing {
+  background: white url("../images/image4.jpg") no-repeat scroll center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.image {
+  height: 136.66px;
+  width: 253px;
+}
