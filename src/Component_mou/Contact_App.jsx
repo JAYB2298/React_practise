@@ -19,7 +19,7 @@ export default class Contact_App extends Component {
             selectCont:contact
         });
     }; 
-
+    
     componentDidMount(){
         let URL= "https://gist.githubusercontent.com/narasimhareddyprostack/7e344f346f47bc53a889d78b5258d0c9/raw/56d531cb936d9c79e2417e5d0e5d8c9c876800f2/contactlist";
         Axios.get(URL)
@@ -39,7 +39,7 @@ export default class Contact_App extends Component {
             <>
             <h1>Contact App</h1>
             <div className='container'>
-                <div className='row'>
+                <div className='row '>
                     <div className='col-md-8'>
                     {this.state.contacts!=null?( <>
                     <Contact 
@@ -47,16 +47,11 @@ export default class Contact_App extends Component {
                         contacts={this.state.contacts}/>
                         </>):null}
                     </div>
-                    <div className='col-md-4'>
-                    
-                        
-                             <Card selectedContact={this.state. selectCont}></Card>
-                            
-                        
+                    <div className='col-md-4 '>
+                        <Card selectedContact={this.state. selectCont}></Card>
                     </div>
                 </div>
             </div>
-                
             </>
         )
     }
