@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 //import App from './React_redux/App'
-//import App from './ConditionalRendering/App'
 //import App from './table_building/App';
 //import App from './ContextApi/App'
-//import App from '../src/ComDrilling/App';
-//import App from '../src/bootstrap/App';
-//import App from './Component_mou/App' 
-import App from './hook_contact/App'
-//import App from './recipe_app/App'
+import App from './routing/App'
 
 ReactDOM.render(
   <React.StrictMode>

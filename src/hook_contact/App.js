@@ -5,12 +5,13 @@ import Card from './card/card'
 
 export default function App() {
     
-    /*let [contact,setContact]=useState(null);
+    let [contact,setContact]=useState(null);
     let [select,setSelect]=useState(null);
+    //let [error,seterror]=useState(null);
     
 
     
-    useEffect(()=>{
+     useEffect(()=>{
         getApi();
     },[]);
 
@@ -18,49 +19,46 @@ export default function App() {
         const response= await fetch("https://gist.githubusercontent.com/narasimhareddyprostack/7e344f346f47bc53a889d78b5258d0c9/raw/56d531cb936d9c79e2417e5d0e5d8c9c876800f2/contactlist");
         const data= await response.json();
         setContact(data);
-    }*/
+    }
     
-    let [contact,setContact]=useState({
+    /* let [contact,setContact]=useState({
         contact:null,
         selectContact:null,
         error:null
-    })
+    }) 
     
     useEffect(()=>{
         let URL= "https://gist.githubusercontent.com/narasimhareddyprostack/7e344f346f47bc53a889d78b5258d0c9/raw/56d531cb936d9c79e2417e5d0e5d8c9c876800f2/contactlist";
         Axios.get(URL)
         .then((Response)=>{
-            setContact({
-                ...contact,contact:Response.data
-            });
+            setContact(Response);
         })
-        .catch((err)=>{
-            setContact({
-                ...contact,error:err
-            });
+       /* .catch((err)=>{
+            seterror(err);
         });
-    },[]);
+    },[]);*/
+    
 
     let pulldata=(event)=>{
-        setContact({...contact,selectContact:event})
+        setSelect(event)
     }
     
     return (
         <>
          <div className='container'>
             <div className='row'>
-                <div className='col-md-6'>
+                <div style={{width:"100%"}} className='col-md-6'>
                     {contact!=null?
                     (
                     <>
                     <Contact
-                    contact={contact.contact}
+                    contact={contact}
                     pulldata={pulldata}/>
                     </>)    
                     :null}
                 </div>
-                <div className='col-md-4'>
-                    <Card selectContact={contact.selectContact}/>
+                <div style={{width:"100%"}} className='col-md-4'>
+                    <Card selectContact={select}/>
                 </div>
             </div>
         </div>
