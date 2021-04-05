@@ -1,16 +1,15 @@
-let Gmorning='Hello GM'
-let Gnight='Hello GN'
+
 
 let sayGMaction=()=>{
        return{
-           type:Gmorning
+           type:'Gmorning'
        };
 }
 
 let sayGNaction=()=>{
        return{
-           type:Gnight
+           type:'Gnight'
        };
 }
 
-export {sayGMaction,sayGNaction,Gmorning,Gnight}
+export {sayGMaction,sayGNaction}

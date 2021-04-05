@@ -1,4 +1,3 @@
-import {Gmorning,Gnight} from './action'
 
 let initialstate={
     message:'Hello,...'
@@ -6,11 +5,11 @@ let initialstate={
 
 let reducer=(state=initialstate,action)=>{
          switch(action.type){
-             case Gmorning:
+             case 'Gmorning':
                  return{
                      message:'Good Morning'
                  };
-            case Gnight:
+            case 'Gnight':
                 return{
                     message:'Good Night'
                 }

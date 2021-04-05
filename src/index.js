@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-//import App from './React_redux/App'
-//import App from './table_building/App';
 //import App from './ContextApi/App'
 import App from './routing/App'
 

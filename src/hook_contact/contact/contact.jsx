@@ -25,7 +25,7 @@ export default function Contact({contact,pulldata}) {
                                 return(
                                 <tr 
                                 key={contact.login.uuid}
-                                onClick={onover.bind(this,contact)}>
+                                onMouseOver={onover.bind(this,contact)}>
                                 <td>{contact.login.uuid}</td>
                                 <td>{contact.name.last}</td>
                                 <td>{contact.dob.age}</td>

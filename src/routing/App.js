@@ -5,6 +5,8 @@ import Hook from '../hook_contact/App'
 import Recipe from '../recipe_app/App'
 import Table from '../table_building/App'
 import Boot from '../bootstrap/App'
+import Redux from '../React_redux/App'
+import Tinder from '../Tinder/App'
 
 
 export default function App() {
@@ -17,7 +19,8 @@ export default function App() {
                     <Route path='/Contactdata' component={Hook}/>
                     <Route path='/Table' component={Table}/>
                     <Route path='/Boot' component={Boot}/>
-
+                    <Route path='/Redux' component={Redux}/>
+                    <Route path='/Tinder' component={Tinder}/>
 
                 </Switch>
             </Router>
